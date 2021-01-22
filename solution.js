@@ -24,11 +24,21 @@ function budgetCalculator(watch, mobile, laptop){
 
     var totalPurchasePrice = totalWatchPrice + totalMobilePrice + totalLaptopPrice ;
 
+    //add extra below
+
+    if(totalPurchasePrice > 10000){
+
+        var totalPurchasePrice =  totalPurchasePrice - 500 + ": Extra $500 discount for over $10000 purchase";
+    }
+    else{
+        var totalPurchasePrice;
+    }
+
     return totalPurchasePrice ;
 
 }
 
-var totalBudget = budgetCalculator(5, 11, 3); //calling budgetCalculator function
+var totalBudget = budgetCalculator(10, 15, 18); //calling budgetCalculator function
 
 console.log(totalBudget);
 
