@@ -8,8 +8,8 @@ function kilometerToMeter(kilometer){
     return meter;
 }
 
-var calculateMeter = kilometerToMeter(5);
-console.log(calculateMeter);
+var calculateMeter = kilometerToMeter(5); //calling kilometerToMeter function
+console.log(calculateMeter); 
 
 
 
@@ -28,7 +28,7 @@ function budgetCalculator(watch, mobile, laptop){
 
 }
 
-var totalBudget = budgetCalculator(5, 11, 3);
+var totalBudget = budgetCalculator(5, 11, 3); //calling budgetCalculator function
 
 console.log(totalBudget);
 
@@ -62,7 +62,7 @@ function hotelCost(day){
 
 }
 
-var totalHotelPrice = hotelCost(26);
+var totalHotelPrice = hotelCost(26); //calling hotelCost function
 console.log(totalHotelPrice);
 
 
@@ -86,5 +86,4 @@ function megaFriend(largeFriendName){
 
 }
 
-console.log(megaFriend([ 'shofik', 'asad' , 'rafique', 'ashique' , 'hasibul']));
-
+console.log(megaFriend([ 'shofik', 'asad' , 'rafique', 'ashique' , 'hasibul'])); //calling megaFriend function
