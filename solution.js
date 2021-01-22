@@ -1,14 +1,22 @@
-
+//https://github.com/Abid-6867/milestone-3
 
 //solution -01
 
 
 function kilometerToMeter(kilometer){
     var meter = kilometer * 1000 ;
-    return meter;
+
+    if(kilometer < 0 ){
+
+        console.log("Unexpected value")
+    }
+    else{
+        return meter;
+    }
+    
 }
 
-var calculateMeter = kilometerToMeter(5); //calling kilometerToMeter function
+var calculateMeter = kilometerToMeter(6); //calling kilometerToMeter function
 console.log(calculateMeter); 
 
 
@@ -24,21 +32,11 @@ function budgetCalculator(watch, mobile, laptop){
 
     var totalPurchasePrice = totalWatchPrice + totalMobilePrice + totalLaptopPrice ;
 
-    //add extra below
-
-    if(totalPurchasePrice > 10000){
-
-        var totalPurchasePrice =  totalPurchasePrice - 500 + ": Extra $500 discount for over $10000 purchase";
-    }
-    else{
-        var totalPurchasePrice;
-    }
-
     return totalPurchasePrice ;
 
 }
 
-var totalBudget = budgetCalculator(10, 15, 18); //calling budgetCalculator function
+var totalBudget = budgetCalculator(10, 15, 5); //calling budgetCalculator function
 
 console.log(totalBudget);
 
@@ -49,6 +47,7 @@ console.log(totalBudget);
 function hotelCost(day){
 
     var totalHotelRent = 0;
+
         if ( day <= 10 ){
             totalHotelRent = day * 100 ;
         }
@@ -72,7 +71,7 @@ function hotelCost(day){
 
 }
 
-var totalHotelPrice = hotelCost(26); //calling hotelCost function
+var totalHotelPrice = hotelCost(30); //calling hotelCost function
 console.log(totalHotelPrice);
 
 
